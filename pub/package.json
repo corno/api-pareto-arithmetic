@@ -1,0 +1,21 @@
+{
+  "author": "Corno",
+  "description": "arithmetic functions",
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "api-pareto-arithmetic",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/corno/api-pareto-arithmetic.git"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.1.0",
+  "dependencies": {
+    "pareto-core-types": "^0.2.0"
+  },
+  "interface-fingerprint": "5be2cd826e3e1c02cf82ae42f8d5bc8a42b52391",
+  "content-fingerprint": "9ddc31c5d4a131c63d6135ebd36d787d49b168df"
+}
