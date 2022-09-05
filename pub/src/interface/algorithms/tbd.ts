@@ -1,6 +1,5 @@
 import * as pt from "pareto-core-types"
-
-export type TNumberRange = pt.Nested<number>
+import { TNumberRange } from "../types/all"
 
 export type FAdd = ($: TNumberRange) => number
 
@@ -14,17 +13,17 @@ export type FNegative = ($: number) => number
  */
 export type FDivideWithRemainder = (
     $: {
-        numerator: number
-        denominator: number
+        readonly numerator: number
+        readonly denominator: number
     }
 ) => null | {
-    quotient: number
-    remainder: number
+    readonly "quotient": number
+    readonly "remainder": number
 }
 
 export type FSubstract = ($: {
-    minuend: number
-    subtrahend: number
+    readonly minuend: number
+    readonly subtrahend: number
 }) => number
 
 /**
