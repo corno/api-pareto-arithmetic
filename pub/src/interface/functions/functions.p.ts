@@ -1,5 +1,5 @@
 import * as pt from "pareto-core-types"
-import { TNumberRange } from "../types/all"
+import { TNumberRange } from "../types/types.p"
 
 export type FAdd = ($: TNumberRange) => number
 
@@ -13,8 +13,8 @@ export type FNegative = ($: number) => number
  */
 export type FDivideWithRemainder = (
     $: {
-        readonly numerator: number
-        readonly denominator: number
+        readonly "numerator": number
+        readonly "denominator": number
     }
 ) => null | {
     readonly "quotient": number
@@ -22,8 +22,8 @@ export type FDivideWithRemainder = (
 }
 
 export type FSubstract = ($: {
-    readonly minuend: number
-    readonly subtrahend: number
+    readonly "minuend": number
+    readonly "subtrahend": number
 }) => number
 
 /**
